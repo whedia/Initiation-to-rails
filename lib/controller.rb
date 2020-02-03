@@ -15,6 +15,10 @@ class ApplicationController < Sinatra::Base
     redirect '/' #Pour retour à la homepage
   end
 
+  get '/gossips/:id/' do
+    erb :show, locals: {id: params['id'].to_i, gossips: Gossip.find(params['id'].to_i)}
+  end
+
   post '/gossips/new/' do
     puts "Salut, je suis dans le serveur"
     puts "Ceci est le contenu du hash params : #{params}"
