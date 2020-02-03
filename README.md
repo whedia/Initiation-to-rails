@@ -2,7 +2,7 @@ Bienvenue dans mon projet du jour ! Ruby et Sinatra pour application de récuper
 
 Utilisation : 
 
-- $ git clone git@github.com:notmoebius/sem4j1.git 
+- $ git clone
 
 (ou download zip)
 
